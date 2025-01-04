@@ -1,5 +1,3 @@
-<img src="banner_github.png" alt="GitHub Banner" width="100%" />
-
 # Hello World!, I'm Ozan, a Turkish FullStack Developer 👋🏼:
 👨🏼‍🎓 studying software engineer<br>👨🏼‍💻 working as a web developer since 2020 <br>
 
