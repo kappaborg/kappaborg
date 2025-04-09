@@ -1,5 +1,5 @@
 # Hello World!, I'm Ozan, a Turkish FullStack Developer 👋🏼:
-👨🏼‍🎓 studying software engineer<br>👨🏼‍💻 working as a web developer since 2020 <br>
+👨🏼‍💻 Your neighbourhood software developer <br>
 
 
 # 💻 Tech Stack:
