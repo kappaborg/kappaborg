@@ -22,7 +22,7 @@
 <a target="_blank" href="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" style="display: inline-block;"><img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="42" height="42" /></a></p>
 <h2>❤️ Support Me</h2>
 <p><p>
-<a href="buymeacoffee.com/kappasutra">
+<a href="www.buymeacoffee.com/kappasutra">
 <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="160" alt="buymeacoffee" />
 </a>
 </p>
