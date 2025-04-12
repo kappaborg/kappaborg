@@ -10,6 +10,7 @@ on:
   push:
     branches:
       - main
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -18,19 +19,22 @@ jobs:
       # Step 1: Checkout the repository
       - name: Checkout Repository
         uses: actions/checkout@v3
-      # Step 2: Generate the snake animations
+
+      # Step 2: Generate the snake animations with themed colors
       - name: Generate GitHub Contributions Snake Animations
         uses: Platane/snk@v3
         with:
           # GitHub username to generate the animation for
           github_user_name: ${{ github.repository_owner }}
-          # Define the output files and their configurations
+          # Define the output files with tokyonight colors
+          # color_dots levels: 0, 1-9, 10-19, 20-29, 30+
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+            dist/github-snake.svg?color_snake=#bb9af7&color_dots=#3b3e58,#444b6a,#7aa2f7,#9d7cd8,#bb9af7&bg_color=FFFFFF00
+            dist/github-snake-dark.svg?color_snake=#bb9af7&color_dots=#3b3e58,#444b6a,#7aa2f7,#9d7cd8,#bb9af7&bg_color=FFFFFF00
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       # Step 3: Deploy the generated files to the 'output' branch
       - name: Deploy to Output Branch
         uses: peaceiris/actions-gh-pages@v3
@@ -39,4 +43,4 @@ jobs:
           publish_dir: ./dist
           publish_branch: output
           # Optionally, you can set a custom commit message
-          commit_message: "Update snake animation [skip ci]"
+          commit_message: "chore: update snake animation colors and workflow trigger" # Updated commit message
